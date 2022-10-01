@@ -24,23 +24,6 @@ bot.command("bull_dimon", (ctx) => {
   ctx.sendSticker('CAACAgEAAxkBAAEF92ljOBOqhWN5vbHdpU8UwwPKJNnoXwACrwEAAsDr6UcSJTT8iVPXaCoE').then(() => ctx.reply('@y0urn3eon'))
 })
 
-// bot.command("all2", (ctx) => {
-//   membersId.map((id) =>
-//     ctx
-//       .getChatMember(id)
-//       .then((member) => {
-//         let user
-//         if (member.user.username) {
-//           user = `@${member.user.username}`;
-//         } else {
-//           user = `[${member.user.first_name}](tg://user?id=${member.user.id})`
-//         }
-//         ctx.reply(user, {parse_mode: "MarkdownV2"})
-//       })
-//   );
-// });
-
-
 bot.launch();
 
 // Enable graceful stop
