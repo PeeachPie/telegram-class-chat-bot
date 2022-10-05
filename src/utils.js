@@ -43,14 +43,6 @@ function getToday(day, week, timeTable) {
   return week[days[parseInt(day)]]
 }
 
-function getDay(day) {
-  
-  if (day === 'понедельник') {
-    parseDay()
-  }
-
-}
-
 function parseDay(day) {
   let parsedDay = ''
   console.log(day)
@@ -60,7 +52,5 @@ function parseDay(day) {
   }
   return parsedDay
 }
-
-// console.log(getToday(1, 2, 3))
 
 module.exports = { getUsernamesById, getToday, parseDay, getTyumenDate };
