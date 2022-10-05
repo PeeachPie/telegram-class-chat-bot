@@ -34,9 +34,9 @@ bot.command("tomorrow", (ctx) => {
     )
 })
 
-// bot.onText(/\/get_day (.+)/, (ctx) => {
-
-// })
+bot.onText(/\/get_day (.+)/, (ctx) => {
+  
+})
 
 // bot.command("bull_dimon", (ctx) => {
 //   ctx.sendSticker('CAACAgEAAxkBAAEF92ljOBOqhWN5vbHdpU8UwwPKJNnoXwACrwEAAsDr6UcSJTT8iVPXaCoE').then(() => ctx.reply('@y0urn3eon'))

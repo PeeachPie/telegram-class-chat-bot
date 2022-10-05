@@ -43,12 +43,13 @@ function getToday(day, week, timeTable) {
   return week[days[parseInt(day)]]
 }
 
-// function getDay(day) {
-//   switch (day) {
-//     case 'понедельник':
-//   }
+function getDay(day) {
+  
+  if (day === 'понедельник') {
+    parseDay()
+  }
 
-// }
+}
 
 function parseDay(day) {
   let parsedDay = ''
