@@ -24,4 +24,42 @@ function toEscapeMsg(str) {
       .replace(/\./g, "\\.");
 }
 
-module.exports = { getUsernamesById }
+function getTyumenDate() {
+  const date = new Date();
+  return new Date(
+    date.getUTCFullYear(),
+    date.getUTCMonth(),
+    date.getUTCDate(),
+    date.getUTCHours() + 5,
+    date.getUTCMinutes(),
+    date.getUTCSeconds(),
+    date.getUTCMilliseconds()
+  );
+}
+
+function getToday(day, week, timeTable) {
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+  console.log(day)
+  return week[days[parseInt(day)]]
+}
+
+// function getDay(day) {
+//   switch (day) {
+//     case 'понедельник':
+//   }
+
+// }
+
+function parseDay(day) {
+  let parsedDay = ''
+  console.log(day)
+  for (lesson of day.lessons) {
+    parsedDay += `<i><b>${lesson.number}</b></i>  ${lesson.name}\n`
+    console.log(lesson)
+  }
+  return parsedDay
+}
+
+// console.log(getToday(1, 2, 3))
+
+module.exports = { getUsernamesById, getToday, parseDay, getTyumenDate };

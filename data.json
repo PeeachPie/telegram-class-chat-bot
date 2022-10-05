@@ -24,5 +24,86 @@
     "1985234960",
     "720169420",
     "618337572"
-  ]
+  ],
+  "week": {
+    "monday": {
+      "lessons": [
+        { "name": "Разговоры о важном", "cabinet": "310", "number": 1 },
+        { "name": "Физика", "cabinet": "205", "number": 2 },
+        { "name": "Русский язык", "cabinet": "315", "number": 3 },
+        { "name": "Информатика", "cabinet": "209, 211", "number": 4 },
+        { "name": "Информатика", "cabinet": "209, 211", "number": 5 },
+        { "name": "История", "cabinet": "220", "number": 6 },
+        { "name": "Математика", "cabinet": "310", "number": 7 },
+        { "name": "Химия", "cabinet": "307", "number": 8 }
+      ]
+    },
+    "tuesday": {
+      "lessons": [
+        { "name": "Математика", "cabinet": "310", "number": 1 },
+        { "name": "Литература", "cabinet": "315", "number": 2 },
+        { "name": "Литература", "cabinet": "315", "number": 3 },
+        { "name": "Английский", "cabinet": "216, 317", "number": 4 },
+        { "name": "Физра", "cabinet": "с/зал", "number": 5 },
+        { "name": "Физика", "cabinet": "205", "number": 6 },
+        { "name": "География", "cabinet": "311", "number": 7 }
+      ]
+    },
+    "wednesday": {
+      "lessons": [
+        { "name": "ОБЖ", "cabinet": "222", "number": 1 },
+        { "name": "Литература", "cabinet": "315", "number": 2 },
+        { "name": "Математика", "cabinet": "310", "number": 3 },
+        { "name": "Английский", "cabinet": "301, 317", "number": 4 },
+        { "name": "Инд. проект", "cabinet": "105", "number": 5 },
+        { "name": "Физика", "cabinet": "205", "number": 6 },
+        { "name": "Физика", "cabinet": "205", "number": 7 }
+      ]
+    },
+    "thursday": {
+      "lessons": [
+        { "name": "Мир и человек (общество)", "cabinet": "220", "number": 1 },
+        { "name": "История", "cabinet": "220", "number": 2 },
+        { "name": "Математика", "cabinet": "310", "number": 3 },
+        { "name": "Математика", "cabinet": "310", "number": 4 },
+        { "name": "Астрономия", "cabinet": "105", "number": 5 },
+        { "name": "Английский", "cabinet": "205, 317", "number": 6 }
+      ]
+    },
+    "friday": {
+      "lessons": [
+        { "name": "Физика", "cabinet": "205", "number": 1 },
+        { "name": "Русский эл.", "cabinet": "315", "number": 2 },
+        { "name": "Информатика", "cabinet": "209, 211", "number": 3 },
+        { "name": "Информатика", "cabinet": "209, 211", "number": 4 },
+        { "name": "Физра", "cabinet": "с/зал", "number": 5 },
+        { "name": "Математика", "cabinet": "310", "number": 6 },
+        { "name": "Математика эл.", "cabinet": "310", "number": 7 }
+      ]
+    }
+  },
+  "timeTable": {
+    "abbreviated": [
+      { "start": "8:30", "end": "9:00" },
+      { "start": "9:15", "end": "9:55" },
+      { "start": "10:15", "end": "10:55" },
+      { "start": "11:15", "end": "11:55" },
+      { "start": "12:05", "end": "12:45" },
+      { "start": "12:55", "end": "13:35" },
+      { "start": "13:45", "end": "14:25" },
+      { "start": "14:35", "end": "15:15" },
+      { "start": "15:25", "end": "16:05" }
+    ],
+    "simple": [
+      { "start": "8:30", "end": "9:15" },
+      { "start": "9:30", "end": "10:15" },
+      { "start": "10:35", "end": "11:20" },
+      { "start": "11:40", "end": "12:25" },
+      { "start": "12:40", "end": "13:25" },
+      { "start": "13:35", "end": "14:20" },
+      { "start": "14:30", "end": "15:15" },
+      { "start": "14:35", "end": "15:15" },
+      { "start": "15:25", "end": "16:10" }
+    ]
+  }
 }
