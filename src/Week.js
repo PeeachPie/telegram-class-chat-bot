@@ -66,5 +66,5 @@ function parseDay(day) {
 }
 
 // console.log(getToday(1, 2, 3))
-
+// https://nodejsdev.ru/guide/events/
 module.exports = { Week };
