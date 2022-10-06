@@ -4,6 +4,7 @@ class Week {
     this.timeTable = options.timeTable
     this.enDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     this.ruDays = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота']
+    this.ruDaysForms = ['воскресение', 'понедельник', 'вторник', 'среду', 'четверг', 'пятницу', 'субботу']
   }
 
   _getTyumenDate() {
@@ -20,51 +21,29 @@ class Week {
   }
 
   getToday() {
-    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
-    return this.week[this.enDays[parseInt(_getTyumenDate().getDay())]]
+    const tyumenDay = this._getTyumenDate().getDay()
+    return "Итак, расписание на сегодня:\n\n" +this._parseDay(this.week[this.enDays[tyumenDay]])
+  }
+
+  getTomorrow() {
+    const tyumenDay = this._getTyumenDate().getDay()
+    return "Итак, расписание на завтра:\n\n" + this._parseDay(this.week[this.enDays[tyumenDay == 6 ? 0 : tyumenDay + 1]])
   }
 
   getDay(day) {
-  
-    if (day === 'понедельник') {
-      this._parseDay()
-    }
-  
+    const id = this.ruDays.indexOf(day)
+    const dayForm = this.ruDaysForms[id]
+    return `Итак, расписание на ${dayForm}:\n\n` + this._parseDay(this.week[this.enDays[id]])
   }
 
   _parseDay(day) {
     let parsedDay = ''
-    for (lesson of day.lessons) {
+    for (let lesson of day.lessons) {
       parsedDay += `<i><b>${lesson.number}</b></i>  ${lesson.name}\n`
     }
     return parsedDay
   }
 }
 
-function getToday(day, week, timeTable) {
-  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
-  console.log(day)
-  return week[days[parseInt(day)]]
-}
-
-function getDay(day) {
-  
-  if (day === 'понедельник') {
-    parseDay()
-  }
-
-}
-
-function parseDay(day) {
-  let parsedDay = ''
-  console.log(day)
-  for (lesson of day.lessons) {
-    parsedDay += `<i><b>${lesson.number}</b></i>  ${lesson.name}\n`
-    console.log(lesson)
-  }
-  return parsedDay
-}
-
-// console.log(getToday(1, 2, 3))
 // https://nodejsdev.ru/guide/events/
 module.exports = { Week };
